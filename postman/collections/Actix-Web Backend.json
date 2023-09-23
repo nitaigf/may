@@ -1,0 +1,31 @@
+{
+	"info": {
+		"_postman_id": "9f68a95e-96d8-47a2-b619-bb478c71e71e",
+		"name": "Actix-Web Backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "671168-9f68a95e-96d8-47a2-b619-bb478c71e71e"
+	},
+	"item": [
+		{
+			"name": "Home :: Welcome",
+			"id": "d381ffef-4d22-49a6-beb9-c75afa0639be",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
