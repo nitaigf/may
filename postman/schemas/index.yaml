@@ -3,8 +3,19 @@ info:
   version: '1.0.0'
   title: 'API de exemplo do sistema MAY'
   description: Diversos cadastros simples para a criação de um sistema base de Autenticação, Autorização e Auditoria
-
+servers:
+  - url: 'https://506aa69d-2e10-437c-8f04-ab6c97737f64.mock.pstmn.io'
 paths:
+  /:
+    get:
+      summary: Welcome Message
+      responses:
+        '200':
+          description: Mensagem de boas-vindas ao end-point inicial para checagem de funcionamento da API
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/securitySchemes/ApiKey"
   /spacecrafts/{spacecraftId}:
     parameters:
       - name: spacecraftId
