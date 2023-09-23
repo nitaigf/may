@@ -1,0 +1,16 @@
+version: '3'
+services:
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "8080:8080"
+    # Outras configurações para o serviço do frontend
+
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "8000:8000"
+    # Outras configurações para o serviço do backend
+
